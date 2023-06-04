@@ -39,25 +39,24 @@ h1{
   font-size:20px;
   font-weight:lighter;
   text-align:left;
-  padding-left:15px;
+  padding:2px;
+  padding-left:10px;
 }
 .vector{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
+  position:absolute;
+  bottom:5%;
+  left:49%;
 }
-
+/* Aligning the button to the center of the page */
 .food_adventures{
   display:flex;
   justify-content:center;
   align-items:center;
-  
-
+  text-align:center;
 }
-
+/* Centering the button to the middle of the page */
 .food_adventures button{
-  background-color:#A2B59D;
+  background-color:#E9DBC4;
   border-radius:20px;
   text-align:center;
   display:inline-block;
@@ -65,15 +64,64 @@ h1{
   margin:40px;
   padding:20px;
   padding-top:10px;
+  padding-left:50px;
   font-weight:lighter;
   border:none;
-  color:white;
-  /* Aligning the button to the center of the screen */
+  color:#A0783F;
+  box-shadow: 10px 8px 5px #d2d1c2;;
+  /* Unsure of how to align the plus png with the words add new. */
+}
+
+form{
+  margin:0 auto;
+  border:5px solid #c5d2c2;
+  box-shadow:10px 8px 5px #b5c1b2;
+  font-size:20px;
+  height:100%;
+  width:50%;
+}
+
+form h2{
+  font-size:30px;
+  text-align:center;
+}
+.form-row{
+  display:flex;
+  justify-content:center;
+  height:60px;
+  
+}
+.form-row input{
+  margin:10px;
+}
+
+label{
+  width:240px;
+  display:inline-block;
+  text-align:right;
+}
+input[type = text ]{
+  padding:10px;
+  margin:20px ;
+  box-shadow: 0 0 15px 4px rgba (0,0,0,0,06);
+  min-height:20px;
+  min-width:px;
+
+}
+input{
+  border-radius:10px;
+
+  box-shadow:0 0 15px 4px rgba (0,0,0,0,06);
 
 }
 
-.food_adventures button img{
-  padding-left:50px;
-  padding-bottom:-5px;
-  display:inline;
+.nav_bar{
+  background-color: #A1B59E;
+  margin-top:40px;
+  font-size:30px;
+  font-weight:lighter;
+  text-align:left;
+  padding-left:10px;
+  border-radius:10px;
+  color:white;
 }

@@ -33,12 +33,142 @@
     </section>
 
     <section class="food_adventures">
-        <button onclick="dropdown_function()">Add New <img src = "Images/AddCircle.png"></button>
-        <div class="addnew"></div>
+        <button onclick="addnewFunction()">Add New <img src="Images/AddCircle.png"></button>
+        <div id="addNew" style="display: none;">
+            <p id="message">Hi there, nice to meet you!</p>
+        </div>
     </section>
 
+    <section>
+        <form id="inputform">
+            <h2>Add New Food Memory</h2>
 
+            <!-- RESTAURANT NAME -->
+            <div class="form-row">
+                <label for="taskName"> Restaurant Name</label>
+                <input type="text" name="taskName" id="taskName" required="true" />
+            </div>
 
+            <!-- RATING -->
+            <div class="form-row">
+                <label for="taskRating">Rating</label>
+                <input type="number" name="taskRating" id="taskRating" required="true" />
+            </div>
+
+            <!-- DISH -->
+            <div class="form-row">
+                <label for="taskDish">Dish Name</label>
+                <input type="text" name="taskDish" id="taskDish" required="true" />
+            </div>
+
+            <!-- REVIEW -->
+            <div class="form-row">
+                <label for="taskReview">Review (of the food)</label>
+                <input type="text" name="taskReview" id="taskReview" required="true" />
+            </div>
+
+            <!-- COMMENT -->
+            <div class="form-row">
+                <label for="taskComment">Comment (One line highlight of the night) </label>
+                <input type="text" name="taskComment" id="taskComment" required="true" />
+            </div>
+
+            <!-- DATE -->
+            <div class="form-row">
+                <label for="taskDate">Date </label>
+                <input type="date" name="taskDate" id="taskDate" required="true" />
+            </div>
+
+            <!-- MEAL_TYPE -->
+            <div class="form-row">
+                <label for="taskMeal_type">Select Meal Type</label>
+                <select id="taskMeal_type name" name="taskMeal_type" required="true">
+                    <option value="">Select One</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Afternoon">Dinner</option>
+                    <option value="Dinner">Dessert</option>
+                    <option value="Dessert">Bar</option>
+                    <option value="Other">Picnic</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- CUISINE -->
+            <div class="form-row">
+                <label for="taskCuisine">Cuisine Type</label>
+                <input type="text" name="taskCuisine" id="taskCuisine" required="true" />
+            </div>
+
+            <!-- IMAGE -->
+            <div class="form-row">
+                <label for="taskFood_img">Add Image</label>
+                <input type="file" name="taskFood_img" id="taskFood_img" required="true" />
+            </div>
+
+            <!-- RECOMMEND -->
+            <div class="form-row">
+                <label for="taskRecommend">Would you recommend this restaurant? </label>
+                <input type="radio" name="taskRecommend" id="taskRecommend" checked>Yes</input>
+                <input type="radio" name="taskRecommend" id="taskRecommend">No</input>
+            </div>
+
+            <div class = "form-row">
+                <input type = "submit">
+            </div>
+        </form>
+    </section>
+
+    <secton class = "recent">
+        <div class = "nav_bar">
+            <p>Your 5 most recent food adventures</p>
+        </div>
+    </secton>
+
+    <secton class = "recent">
+        <div class = "nav_bar">
+            <p>Breakfast</p>
+        </div>
+    </secton>
+
+    <secton class = "recent">
+        <div class = "nav_bar">
+            <p>Lunch</p>
+        </div>
+    </secton>
+
+    <secton class = "recent">
+        <div class = "nav_bar">
+            <p>Dinner</p>
+        </div>
+    </secton>
+
+    <secton class = "recent">
+        <div class = "nav_bar">
+            <p>Dessert</p>
+        </div>
+    </secton>
+
+    <secton class = "recent">
+        <div class = "nav_bar">
+            <p>Bar</p>
+        </div>
+    </secton>
+
+    <secton class = "recent">
+        <div class = "nav_bar">
+            <p>Picnic</p>
+        </div>
+    </secton>
+
+    <secton class = "recent">
+        <div class = "nav_bar">
+            <p>Other</p>
+        </div>
+    </secton>
+    
+  
+    <script src="script.js"></script>
 </body>
 
 </html>
