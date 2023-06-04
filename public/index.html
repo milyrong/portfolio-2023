@@ -1,68 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Task Tracker</title>
-        <link rel="stylesheet" href="scss/main.scss">
-    </head>
-    <body>
-        <header>
-            <h1>Task Tracker</h1>
-        </header>
-        <form id="taskform">
-            <div class="form-row">
-                <label for="taskName">Name</label>
-                <input
-                    type="text"
-                    name="taskName"
-                    id="taskName"
-                    required="true"
-                >
-            </div>
-            <div class="form-row">
-                <label for="taskType">Type</label>
-                <select id="taskType" name="taskType" required="true">
-                    <option value="">Select one</option>
-                    <option value="Concept Ideation">Concept Ideation</option>
-                    <option value="Wireframing">Wireframing</option>
-                    <option value="Application Coding">Application Coding</option>
-                </select>
-            </div>
-            <div class="form-row">
-                <label for="taskRate">Rate</label>
-                <input
-                    type="number"
-                    name="taskRate"
-                    id="taskRate"
-                    required="true"
-                >
-            </div>
-            <div class="form-row">
-                <label for="taskTime">Time</label>
-                <input
-                    type="number"
-                    name="taskTime"
-                    id="taskTime"
-                    required="true"
-                >
-            </div>
-            <div class="form-row">
-                <label for="taskClient">Client</label>
-                <input
-                    type="text"
-                    name="taskClient"
-                    id="taskClient"
-                    required="true"
-                >
-            </div>
-            <div class="form-row">
-                <input type="submit">
-            </div>
-        </form>
-        <h2>Tasks</h2>
-        <ul id="tasklist"></ul>
-        <script src="script.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Incorporating the font downloaded from google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>NomNotes</title>
+</head>
+
+<body>
+    </div>
+    <section class="header">
+        <div class="nav">
+            <p>Nom.com</p>
+        </div>
+        <div class="introText">
+            <h1>Welcome to your personal <br> Nom Notes</h1>
+        </div>
+
+        <div class="introImage">
+            <img src="Images/logo.png" alt="hi" width="700">
+        </div>
+        <div class="vector">
+            <img src="Images/Vector.png">
+        </div>
+    </section>
+
+    <section class="food_adventures">
+        <button onclick="dropdown_function()">Add New <img src = "Images/AddCircle.png"></button>
+        <div class="addnew"></div>
+    </section>
+
+
+
+</body>
+
 </html>
