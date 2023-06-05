@@ -126,43 +126,39 @@ input{
   border-radius:10px;
   color:white;
 }
-aside {
-  grid-area: tasklist;
-  padding: 1em;
-  overflow-y: scroll;
-}
+
 
 
 #tasklist {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  list-style: none;
   margin-block-start: 0;
 
 }
 
 #tasklist li {
-  width: 100%;
+  width:20%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  border: 1px solid gray;
-  padding: 1em;
+  border: 3px solid #c5d2c2;
+  padding: 50px;
   margin-bottom: 1em;
 }
 
 #tasklist li p {
   flex-grow: 1;
+  font-size:20px;
   margin-left: 10px;
   max-width: 200px;
 }
-#tasklist li span {
+/* #tasklist li span {
   text-align: right;
   flex-grow: 1;
   margin-right: 10px;
   max-width: 200px;
-}
+} */
 
 #tasklist li input[type="checkbox"] {
   margin-top: 10px;
@@ -170,16 +166,32 @@ aside {
   height: 20px;
 }
 
+/* Remove button where it displays the user inputs */
 #tasklist li button {
   font-size: 20px;
-  padding: 4px;
+  padding: 2px;
+  height:20%;
+  background-color:#E9DBC4;
+  align-items: baseline;
+
 }
 
 .recent h2{
-  font-size:50px;
+  font-size:30px;
   position:relative;
+  font-weight:100;
+  padding:10px;
   left: 0%;
-  background-color:#A0783F;
-  border-radius:20px;
+  background-color:#A1B59E;
+  border-radius:10px;
+  color:white;
 }
+li img {
+  width: 300px; 
+  height: 300px; /* Maintain aspect ratio */
+  margin: 80px; /* Add some spacing between the image and text */
+}
+
+
+
 

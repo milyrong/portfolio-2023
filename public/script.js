@@ -37,15 +37,24 @@ form.addEventListener("submit", function (event) {
 function displayTask(task) {
     let item = document.createElement("li");
     item.setAttribute("data-id", task.id);
+    const formattedDate = formatDate(task.date);
+    
+    let imageElem = document.createElement("img");
+    imageElem.src = task.food_img;
+
     item.innerHTML =
-        `<p><strong>${task.name}</strong><br>${task.rating}</p>
-    <span><em>${task.meal_type} hours</em><br>${task.comment}/hr</span>
+        `<p><strong>Restaurant Name: </strong>${task.name}<br><strong>Restaurant Rating: </strong>${task.rating}
+        <br><strong>Dish Ordered: </strong>${task.dish}<br> <strong> Review: </strong>${task.review}<br><strong>Comment: </strong>${task.comment}
+        <br><strong>Cuisine Type: </strong>${task.cuisine}<br><strong>Meal Type: </strong>${task.meal_type}<br><strong>Recommend? </strong>${task.recommend}
+        <br><strong>Date: </strong>${formattedDate}</p>
+        
    `;
+   item.appendChild(imageElem);
    tasklist.appendChild(item);
    form.reset();
 
     let delButton = document.createElement("button");
-    let delButtonText = document.createTextNode("delete");
+    let delButtonText = document.createTextNode("Remove");
     delButton.appendChild(delButtonText);
     item.appendChild(delButton);
 
@@ -85,7 +94,20 @@ function addTask(name, rating, dish, review, comment, date, food_img,
     displayTask(task);
 }
 
-addTask("Totti",9,"fried","love it","with friends",20/12/2020,"Images/Vecor.png","fancy","chinese",true);
+
+// ...
+  
+function formatDate(dateString) {
+    const dateObject = new Date(dateString);
+    const day = String(dateObject.getDate()).padStart(2, "0");
+    const month = String(dateObject.getMonth() + 1).padStart(2, "0");
+    const year = dateObject.getFullYear();
+    return `${day}/${month}/${year}`;
+  }
+  
+  // ...
+  
+addTask("Totti",9,"fried","love it","with friends",20/12/2020,"Images/Vector.png","fancy","chinese",true);
 
 console.log(taskList);
 
