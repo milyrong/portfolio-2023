@@ -47,13 +47,7 @@ h1{
   bottom:5%;
   left:49%;
 }
-/* Aligning the button to the center of the page */
-.food_adventures{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-}
+
 /* Centering the button to the middle of the page */
 .food_adventures button{
   background-color:#E9DBC4;
@@ -63,8 +57,7 @@ h1{
   font-size:35px;
   margin:40px;
   padding:20px;
-  padding-top:10px;
-  padding-left:50px;
+
   font-weight:lighter;
   border:none;
   color:#A0783F;
@@ -80,6 +73,14 @@ form{
   height:100%;
   width:50%;
 }
+/* Adjusting the form to be below the button */
+#addbutton {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
 
 form h2{
   font-size:30px;
@@ -125,3 +126,4 @@ input{
   border-radius:10px;
   color:white;
 }
+
