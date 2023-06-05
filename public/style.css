@@ -126,4 +126,60 @@ input{
   border-radius:10px;
   color:white;
 }
+aside {
+  grid-area: tasklist;
+  padding: 1em;
+  overflow-y: scroll;
+}
+
+
+#tasklist {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-block-start: 0;
+
+}
+
+#tasklist li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 1px solid gray;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+#tasklist li p {
+  flex-grow: 1;
+  margin-left: 10px;
+  max-width: 200px;
+}
+#tasklist li span {
+  text-align: right;
+  flex-grow: 1;
+  margin-right: 10px;
+  max-width: 200px;
+}
+
+#tasklist li input[type="checkbox"] {
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+#tasklist li button {
+  font-size: 20px;
+  padding: 4px;
+}
+
+.recent h2{
+  font-size:50px;
+  position:relative;
+  left: 0%;
+  background-color:#A0783F;
+  border-radius:20px;
+}
 
