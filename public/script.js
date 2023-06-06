@@ -7,7 +7,7 @@ function toggleForm() {
       addButton.textContent = "Cancel"; // Update button text
     } else {
       formDiv.style.display = "none";
-      addButton.textContent = "Add New"; // Update button text
+      addButton.textContent = "Add a New Note"; // Update button text
     }
   }
 
