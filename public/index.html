@@ -24,7 +24,7 @@
         </div>
 
         <div class="introImage">
-            <img src="Images/logo.png" alt="hi" width="700">
+            <img src="Images/logo.png" alt="Carrot logo image with a green scribble" width="500px">
         </div>
         <div class="vector">
             <img src="Images/Vector.png">
@@ -39,43 +39,43 @@
 
                 <!-- RESTAURANT NAME -->
                 <div class="form-row">
-                    <label for="taskName"> Restaurant Name</label>
+                    <label for="taskName"> Restaurant Name: </label>
                     <input type="text" name="taskName" id="taskName" required="true" />
                 </div>
 
                 <!-- RATING -->
                 <div class="form-row">
-                    <label for="taskRating">Rating</label>
-                    <input type="number" name="taskRating" id="taskRating" required="true" />
+                    <label for="taskRating">Rating(out of 10): </label>
+                    <input type="number" name="taskRating" id="taskRating" required="true" min="1" max="10"/>
                 </div>
 
                 <!-- DISH -->
                 <div class="form-row">
-                    <label for="taskDish">Dish Name</label>
+                    <label for="taskDish">Dish Name: </label>
                     <input type="text" name="taskDish" id="taskDish" required="true" />
                 </div>
 
                 <!-- REVIEW -->
                 <div class="form-row">
-                    <label for="taskReview">Review (of the food)</label>
+                    <label for="taskReview">Review (of the food): </label>
                     <input type="text" name="taskReview" id="taskReview" required="true" />
                 </div>
 
                 <!-- COMMENT -->
                 <div class="form-row">
-                    <label for="taskComment">Comment (One line highlight of the night) </label>
+                    <label for="taskComment">Highlight of the night: </label>
                     <input type="text" name="taskComment" id="taskComment" required="true" />
                 </div>
 
                 <!-- DATE -->
                 <div class="form-row">
-                    <label for="taskDate">Date </label>
+                    <label for="taskDate">Date: </label>
                     <input type="date" name="taskDate" id="taskDate" required="true" />
                 </div>
 
                 <!-- MEAL_TYPE -->
                 <div class="form-row">
-                    <label for="taskMeal_type">Select Meal Type</label>
+                    <label for="taskMeal_type">Select Meal Type: </label>
                     <select id="taskMeal_type name" name="taskMeal_type" required="true">
                         <option value="">Select One</option>
                         <option value="Breakfast">Breakfast</option>
@@ -90,19 +90,19 @@
 
                 <!-- CUISINE -->
                 <div class="form-row">
-                    <label for="taskCuisine">Cuisine Type</label>
+                    <label for="taskCuisine">Cuisine Type: </label>
                     <input type="text" name="taskCuisine" id="taskCuisine" required="true" />
                 </div>
 
                 <!-- IMAGE -->
                 <div class="form-row">
-                    <label for="taskFood_img">Add Image</label>
-                    <input type="file" name="taskFood_img" id="taskFood_img" required="true" />
+                    <label for="taskFood_img">Add Image: </label>
+                    <input type="file" name="taskFood_img" id="taskFood_img" required="true" accept = "image/*" />
                 </div>
 
                 <!-- RECOMMEND -->
                 <div class="form-row">
-                    <label for="taskRecommend">Would you recommend this restaurant? </label>
+                    <label for="taskRecommend">Would you recommend this restaurant?: </label>
                     <input type="radio" name="taskRecommend" id="taskRecommend" checked>Yes</input>
                     <input type="radio" name="taskRecommend" id="taskRecommend">No</input>
                 </div>
@@ -115,18 +115,22 @@
         </div>
     </section>
 <section class = "recent">
-    <h2> Your 5 most recent adventures</h2>
+    <h2> Your 5 most recent food adventures</h2>
         <ul id = "tasklist">
         </ul>
 
     </section>
     <secton class="recent">
         <div class="nav_bar">
-            <p>Your 5 most recent food adventures</p>
+            <p>incomplete</p>
         </div>
     </secton>
 
 
+    <section class = "footer">
+        <img src = "Images/Carrot.png" >
+        <p>Have a great day and eat lots of yummy food!</p>
+    </section>
 
     <script src="script.js"></script>
 </body>

@@ -1,13 +1,13 @@
 function toggleForm() {
     var formDiv = document.getElementById("addbutton");
     var addButton = document.querySelector(".food_adventures button");
-  
+  //code to show the form as users press the button 
     if (formDiv.style.display === "none") {
       formDiv.style.display = "block";
-      addButton.textContent = "Cancel"; // Update button text
+      addButton.textContent = "Cancel"; // Updates button text
     } else {
       formDiv.style.display = "none";
-      addButton.textContent = "Add a New Note"; // Update button text
+      addButton.textContent = "Add a New Note"; // Updates button text
     }
   }
 
@@ -40,7 +40,7 @@ function displayTask(task) {
     const formattedDate = formatDate(task.date);
     
     let imageElem = document.createElement("img");
-    imageElem.src = task.food_img;
+    imageElem.src = task.Food_img;
 
     item.innerHTML =
         `<p><strong>Restaurant Name: </strong>${task.name}<br><strong>Restaurant Rating: </strong>${task.rating}
@@ -95,8 +95,9 @@ function addTask(name, rating, dish, review, comment, date, food_img,
 }
 
 
-// ...
-  
+
+// A function to return the user input in date String format back to users. 
+//Code retrieved from: https://stackoverflow.com/questions/45974431/convert-date-from-input-to-date-object  
 function formatDate(dateString) {
     const dateObject = new Date(dateString);
     const day = String(dateObject.getDate()).padStart(2, "0");
@@ -105,47 +106,9 @@ function formatDate(dateString) {
     return `${day}/${month}/${year}`;
   }
   
-  // ...
   
 addTask("Totti",9,"fried","love it","with friends",20/12/2020,"Images/Vector.png","fancy","chinese",true);
 
 console.log(taskList);
-
-
-
-
-// //defining variable 
-// let checkboxElem = document.createElement("input");
-// checkboxElem.setAttribute("type", "checkbox");
-
-// item.prepend(checkboxElem)
-
-// item.insertBefore(checkboxElem, item.firstChild)
-  
-// checkboxElem.addEventListener("change", (event) => {
-//   // Event listener callback function
-//   let isChecked = event.target.checked;
-  
-//   // for (let i = 0; i < taskList.length; i++) {
-    
-//   // }
-  
-//   taskList.forEach(function(taskArrayElement, taskArrayIndex){
-//     if (taskArrayElement.id == item.getAttribute("data-id")){
-//       if (isChecked) {
-//         item.style.backgroundColor = 'rgb(220, 255, 220)';
-//         taskArrayElement.billable = true;
-//       } else {
-//         item.style.backgroundColor = '#ffffff';
-//         taskArrayElement.billable = false;
-//       }
-//     }
-//   })
-  
-// })
-
-
-
-// Leave the bracket below to close the displayTask function
 
 
