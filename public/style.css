@@ -8,6 +8,7 @@ html, body {
 h1{
     text-align:left;
     
+    
 }
 
 .header{
@@ -111,8 +112,9 @@ input[type = text ]{
 }
 input{
   border-radius:10px;
-
-  box-shadow:0 0 15px 4px rgba (0,0,0,0,06);
+  background-color:#E9DBC4;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border:0;
 
 }
 
