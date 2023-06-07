@@ -135,8 +135,6 @@ function formatDate(dateString) {
   }
   
   
-addTask("Totti",9,"Breakfast","love it","with friends",20/12/2020,"Images/Vector.png","fancy","chinese",true);
-
 console.log(taskList);
 
 

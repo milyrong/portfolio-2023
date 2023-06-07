@@ -64,7 +64,7 @@ Further improvements / recommendations :
 
 
 
-    Lessons Learnt / Best practices: 
+Lessons Learnt / Best practices: 
 
     The first lesson learnt is definitely to have better time management and be patient when coding. Especially when the smallest little unintended changes / mistakes can cause the whole code to not function. 
     However, aside from that, i had developed and enhanced my personal coding skills. Firstly, is using scss. Initially i began coding with css and i remembered learning about scss, when i began using it, i noticed that it would make the code a lot neater, easier and more efficient. It was like iterating through loops / if statements in python/java but for scss. That was very interesting. 
