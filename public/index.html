@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/main.scss"/>
+    <link rel="stylesheet" href="scss/main.scss" />
     <!-- Incorporating the font downloaded from google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Header section of the code. includes the title and image logo -->
     <section class="header">
         <div class="nav">
             <p>Nom.com</p>
@@ -24,13 +25,13 @@
         </div>
 
         <div class="introImage">
-            <img src="Images/logo.png" alt="Carrot logo image with a green scribble" >
+            <img src="Images/logo.png" alt="Carrot logo image with a green scribble">
         </div>
         <div class="vector">
             <img src="Images/Vector.png">
         </div>
     </section>
-
+<!-- This section consists of the form. As users toggle the button, they are able to add a new form -->
     <section class="food_adventures">
         <button onclick="toggleForm()">Add a New Note</button>
         <div id="addbutton" style="display: none;">
@@ -46,7 +47,7 @@
                 <!-- RATING -->
                 <div class="form-row">
                     <label for="taskRating">Rating(out of 10): </label>
-                    <input type="number" name="taskRating" id="taskRating" required="true" min="1" max="10"/>
+                    <input type="number" name="taskRating" id="taskRating" required="true" min="1" max="10" />
                 </div>
 
                 <!-- DISH -->
@@ -97,7 +98,7 @@
                 <!-- IMAGE -->
                 <div class="form-row">
                     <label for="taskFood_img">Add Image: </label>
-                    <input type="file" name="taskFood_img" id="taskFood_img" required="true" accept = "image/*" />
+                    <input type="file" name="taskFood_img" id="taskFood_img" required="true" accept="image/*" />
                 </div>
 
                 <!-- RECOMMEND -->
@@ -110,69 +111,94 @@
                 <div class="form-row">
                     <input type="submit">
                 </div>
-        
+
             </form>
         </div>
     </section>
-<section class = "recent">
-    <h2> Your 5 most recent food adventures</h2>
-        <ul id = "tasklist">
-        </ul>
+
+    <section class="recent">
+        <!-- This shows the most recent 3 activities -->
+        <h2> Your 3 most recent food adventures</h2>
+        <!-- Initally, the idea was to allow users to quickly see their
+        three most recent adventures, however due to technical difficulties
+        this has been changed to static images  -->
+        <div class="row">
+            <div class="column">
+                <img src="Images/Franca.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Pelligrino.png" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="Images/Sails.png" alt="Mountains" style="width:100%">
+            </div>
+        </div>
 
     </section>
-<section class = "reviews">
-    <!-- BREAKFAST SECTION -->
-    <secton class="breakfast">
-        <div class="nav_bar">
-            <p>breakfast</p>
-        </div>
-        <ul id = 'breakfastList'></ul>
-    </secton>
 
-    <!-- LUNCH SECTION -->
-    <secton class="lunch">
-        <div class="nav_bar">
-            <p>lunch</p>
-        </div>
-        <ul id="lunchList"></ul>
-    </secton>
+    <!-- This section displays all the user data that they have inputted through the form -->
+    <section class="reviews">
+        <!-- BREAKFAST SECTION -->
+        <secton class="breakfast">
+            <div class="nav_bar">
+                <p>breakfast</p>
+            </div>
+            <ul id='breakfastList'></ul>
+        </secton>
 
-    <!-- DINNER SECTION -->
-    <secton class="dinner">
-        <div class="nav_bar">
-            <p>dinner</p>
-        </div>
-        <ul id = "DinnerList"></ul>
-    </secton>
+        <!-- LUNCH SECTION -->
+        <secton class="lunch">
+            <div class="nav_bar">
+                <p>lunch</p>
+            </div>
+            <ul id="lunchList"></ul>
+        </secton>
 
-    <!-- DESSERT SECTION -->
-    <secton class="dessert">
-        <div class="nav_bar">
-            <p>dessert</p>
-        </div>
-        <ul id = "DessertList"></ul>
-    </secton>
+        <!-- DINNER SECTION -->
+        <secton class="dinner">
+            <div class="nav_bar">
+                <p>dinner</p>
+            </div>
+            <ul id="DinnerList"></ul>
+        </secton>
 
-    <!-- BAR SECTION -->
-    <secton class="bar">
-        <div class="nav_bar">
-            <p>bar</p>
-        </div>
-        <ul id = "BarList"></ul>
-    </secton>
+        <!-- DESSERT SECTION -->
+        <secton class="dessert">
+            <div class="nav_bar">
+                <p>dessert</p>
+            </div>
+            <ul id="DessertList"></ul>
+        </secton>
 
-    <!-- PICNIC SECTION -->
-    <secton class="picnic">
-        <div class="nav_bar">
-            <p>picnic</p>
-        </div>
-        <ul id="PicnicList"></ul>
-    </secton>
-</section>
+        <!-- BAR SECTION -->
+        <secton class="bar">
+            <div class="nav_bar">
+                <p>bar</p>
+            </div>
+            <ul id="BarList"></ul>
+        </secton>
+
+        <!-- PICNIC SECTION -->
+        <secton class="picnic">
+            <div class="nav_bar">
+                <p>picnic</p>
+            </div>
+            <ul id="PicnicList"></ul>
+        </secton>
+
+        <!-- ALL OF REVIEWS -->
+        <section class = "all">
+            <div class = "nav_bar">
+                <p>All memories</p>
+            </div>
+        <ul id="tasklist">
+        </section>
+        </ul>
+    </section>
 
     <!-- FOOTER OF PAGE -->
-    <section class = "footer">
-        <img src = "Images/Carrot.png" >
+    <section class="footer">
+        <img src="Images/Carrot.png">
         <p>Have a great day and eat lots of yummy food!</p>
     </section>
 

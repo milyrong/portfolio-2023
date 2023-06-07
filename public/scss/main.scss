@@ -1,6 +1,7 @@
 /*This code was previously copied over from style.css, hence 
 it contains some css and some scss. :( 
 It was moved to scss for easier formatting */
+
 //$iphone-portrait: 480 max px;
 @media only screen and (max-width:480px){
   body{
@@ -58,7 +59,10 @@ It was moved to scss for easier formatting */
     }
   }
   .nav_bar{
-    background-color:#A1B59E
+    background-color:#A1B59E;
+    margin:0;
+    padding-left:10px;
+    border-radius:7px;
   }
   .footer{
     padding:10px;
@@ -72,6 +76,7 @@ It was moved to scss for easier formatting */
     p{
       font-size:12px;
     }
+    
   }
   }
 }
@@ -235,7 +240,7 @@ ul img {
   /* Add some spacing between the image and text */
 }
 
-//nav bar on top of footer
+//nav bar for the different sections of reviews. e.g. Breakfast etc. 
 .nav_bar {
   background-color: #A2B59D;;
   margin-top: 40px;
@@ -248,6 +253,7 @@ ul img {
 }
 
 
+/*tasklist has been designed for the "all reviews" section.*/
 
 #tasklist {
   margin: 0 auto;
@@ -288,14 +294,13 @@ ul img {
   height: 20%;
   background-color: #E9DBC4;
   color:#A0783F;
-  align-items: baseline;
-  width:10%;
+  width:30%;
   border-radius:5px;
   border:0;
 
 }
 
-/*Reviews section SCSS*/
+/*The section that would show all the different reviews that users have added*/
 
 .reviews{
   li{
@@ -313,7 +318,7 @@ ul img {
       color:#A0783F;
       border:0;
       height:20%;
-      width:10%;
+      width:30%;
       border-radius:5px;
     }
   }
@@ -325,11 +330,11 @@ ul img {
   position: relative;
   background-color: #E9DBC4;
   padding: 20px;
-  
+  //With regards to position, tried to use relative however, the format would change and not match the different screen sizes. 
   img {
-    position: absolute;
-    left: 23%;
-    bottom: 25%;
+    position:absolute;
+    left: 10%;
+    bottom: 20%;
     width: 70px;
     height: 70px;
   }
@@ -341,3 +346,21 @@ ul img {
 
   }
 }
+//This code aligns the most recent 3 images into the same row
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 0 0 33.33%; /* Set the flex basis to one-third of the container */
+  padding: 1px;
+}
+
+/* Clear the flex layout after image containers */
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
