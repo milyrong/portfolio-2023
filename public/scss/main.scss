@@ -1,10 +1,84 @@
 /*This code was previously copied over from style.css, hence 
 it contains some css and some scss. :( 
 It was moved to scss for easier formatting */
+//$iphone-portrait: 480 max px;
+@media only screen and (max-width:480px){
+  body{
+    .header{
+      width:100%;
+    }
+    .introImage{
+      img{
+      position:relative;
+      left:60%;
+      width:50%;
+      height:auto;
+    }}
+
+    .vector{
+      img{
+        width:50%;
+      }
+    }
+    .introText{
+      font-size:12px;
+      position:relative;
+      bottom:0;
+    }
+    .nav{
+      padding:0px;
+      font-size:8px;
+    }
+    p{
+      font-size:12px;
+    }
+    .food_adventures {
+      button{
+      width:70%;
+      height:auto;
+      font-size:20px;
+    }
+    form{
+      font-size:15px;
+      width:80%;
+    }
+  }
+  .recent{
+    h2{
+      font-size:15px;
+      padding:5px;
+    }
+    ul{
+      /*attempt to decrease the font size of the task list 
+       being displayed.Unsure of error*/
+      font-size:10px;
+      p{
+        font-size:10px;
+      }
+    }
+  }
+  .nav_bar{
+    background-color:#A1B59E
+  }
+  .footer{
+    padding:10px;
+    img{
+      position:absolute;
+      left:5%;
+      bottom:20%;
+      width:40px;
+      height:auto;
+    }
+    p{
+      font-size:12px;
+    }
+  }
+  }
+}
 html,
 body {
   height: 100%;
-  width: 100%;
+  min-width: 100%;
   font-family: 'Andika', sans-serif;
   background-color: #FBFAF9;
 }
@@ -37,6 +111,7 @@ h1 {
   position: absolute;
   bottom: 10%;
   right: 15%;
+  width:"500px"
 }
 //Top navigation bar (Nom.com)
 .nav {
@@ -162,7 +237,7 @@ ul img {
 
 //nav bar on top of footer
 .nav_bar {
-  background-color: black;
+  background-color: #A2B59D;;
   margin-top: 40px;
   font-size: 30px;
   font-weight: lighter;
@@ -220,6 +295,30 @@ ul img {
 
 }
 
+/*Reviews section SCSS*/
+
+.reviews{
+  li{
+    border:3px solid#c5d2c2;
+    padding:20px;
+    width:50%;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+
+    button{
+      font-size:12px;
+      padding:2px;
+      background-color:#E9DBC4;
+      color:#A0783F;
+      border:0;
+      height:20%;
+      width:10%;
+      border-radius:5px;
+    }
+  }
+
+}
 
 //footer addition
 .footer {

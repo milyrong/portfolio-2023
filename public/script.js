@@ -65,9 +65,37 @@ function displayTask(task) {
                 tasklist.splice(taskArrayIndex,1)
         }
     }) 
-
+//Code to categorisse the data into different categories. 
 console.log(taskList);
-})
+    })
+    let listId;
+    switch(task.meal_type){
+      case 'Breakfast':
+        listId = 'breakfastList';
+        break;
+      case 'Lunch':
+        listId = 'lunchList';
+        break;
+
+      case 'Dinner':
+        listId = 'DinnerList';
+        break;
+
+      case 'Dessert':
+        listId = 'DessertList';
+        break;
+
+     case 'Bar':
+        listId = 'BarList';
+        break;
+
+    case 'Picnic':
+        listId = 'PicnicList';
+        break;
+      
+    }
+    let list = document.getElementById(listId);
+    list.appendChild(item);
 
 }
 
@@ -107,7 +135,7 @@ function formatDate(dateString) {
   }
   
   
-addTask("Totti",9,"fried","love it","with friends",20/12/2020,"Images/Vector.png","fancy","chinese",true);
+addTask("Totti",9,"Breakfast","love it","with friends",20/12/2020,"Images/Vector.png","fancy","chinese",true);
 
 console.log(taskList);
 
